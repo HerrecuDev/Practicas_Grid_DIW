@@ -1,0 +1,25 @@
+
+// Formato tablet
+
+@mixin tablet{
+
+    @media(min-width: $formatotablet){
+
+        @content;
+    }
+
+
+}
+
+
+
+//Formato web
+
+@mixin web{
+
+    @media(min-width: $formatoweb){
+        
+        @content;
+    }
+
+}

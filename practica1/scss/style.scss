@@ -1,0 +1,50 @@
+@import '_variables';
+@import '_mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenido{
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5px;
+    height: 100vh;
+
+
+
+                header{
+
+                    background: #f38c66;
+                    color: white;
+                }
+
+                main{
+
+                    background: #8a0000;
+                    color: white;
+
+                }
+
+
+                aside{
+
+                    background-color: cadetblue;
+
+                }
+
+                footer{
+
+                    background: #001f7a;
+
+                }
+
+}
+
+
