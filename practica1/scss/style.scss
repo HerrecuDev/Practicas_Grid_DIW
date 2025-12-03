@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.contenido{
+.principal{
 
     /*Para Moviles*/
     max-width: 1100px;
@@ -17,12 +17,12 @@
     /*Espacio entre hijos*/
     grid-gap: 5px;
    
-    height: 100vh;
+    height: 100vh; //No se debe usar
 
         @include tablet{
 
                 grid-template-rows: 15% 35% 35% 15%;
-                grid-template-columns: repeat(4,25%);
+                grid-template-columns: repeat(4,calc(25% - 30px/4));
 
                 /*Espacio entre hijos*/
                  grid-gap: 10px;
@@ -41,7 +41,6 @@
                     /*Le asigno las propiedades de grid*/
                         grid-column-start:1 ;
                         grid-column-end: 5;
-            
 
                     }
 
