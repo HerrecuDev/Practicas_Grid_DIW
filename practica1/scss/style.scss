@@ -8,40 +8,99 @@
 
 .contenido{
 
+    /*Para Moviles*/
     max-width: 1100px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-rows: 15% 35% 35% 15%;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 5px;
+
+    /*Espacio entre hijos*/
+    grid-gap: 5px;
+   
     height: 100vh;
 
+        @include tablet{
 
+                grid-template-rows: 15% 35% 35% 15%;
+                grid-template-columns: repeat(4,25%);
+
+                /*Espacio entre hijos*/
+                 grid-gap: 10px;
+        }
 
                 header{
 
+                    /*Diseño*/
+
+                    text-align: center;
                     background: #f38c66;
                     color: white;
+
+                    @include tablet{
+
+                    /*Le asigno las propiedades de grid*/
+                        grid-column-start:1 ;
+                        grid-column-end: 5;
+            
+
+                    }
+
+                   
                 }
 
                 main{
-
+                    /*Diseño*/
                     background: #8a0000;
                     color: white;
+
+
+                      @include tablet{
+
+                        /*Le asigno las propiedades de grid*/
+
+                    
+                        grid-column: 1/4;
+                        grid-row: 2/4;
+                        
+
+                    }
 
                 }
 
 
                 aside{
 
+                    /*Diseño*/
                     background-color: cadetblue;
+
+                     @include tablet{
+
+                        /*Le asigno las propiedades de grid*/
+                            grid-column: 4/5;
+                            grid-row: 2/4;
+                    
+                        
+
+                    }
+                    
 
                 }
 
                 footer{
 
+                    
+                    /*Diseño*/
                     background: #001f7a;
+
+                     @include tablet{
+
+                        grid-column-start:1 ;
+                        grid-column-end: 5;
+                        
+
+                    }
+                    
+
 
                 }
 
